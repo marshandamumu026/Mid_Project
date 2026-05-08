@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - John Doe</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        header { background: #007BFF; color: white; padding: 1rem; text-align: center; }
+        nav { background: #333; padding: 1rem; }
+        nav ul { list-style: none; display: flex; justify-content: center; }
+        nav li { margin: 0 1rem; }
+        nav a { color: white; text-decoration: none; font-weight: bold; }
+        nav a:hover { color: #007BFF; }
+        .container { max-width: 1200px; margin: 2rem auto; padding: 0 1rem; }
+        .hero { text-align: center; padding: 4rem 0; background: #f4f4f4; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+        .gallery-item img { width: 100%; height: 200px; object-fit: cover; }
+        .blog-post { margin-bottom: 2rem; border-bottom: 1px solid #ddd; padding-bottom: 1rem; }
+        form { max-width: 500px; margin: 0 auto; }
+        input, textarea { width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ddd; }
+        button { background: #007BFF; color: white; padding: 0.75rem 1.5rem; border: none; cursor: pointer; }
+        footer { background: #333; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
+        .active { background: #007BFF; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfolio Marshanda</h1>
+        <p>Mahasiswa Teknik Informatika - Universitas Sam Ratulangi, Manado</p>
+    </header>
+    <nav>
+        <ul id="navList">
+            <li><a href="#" onclick="showPage('home')" class="active">Home</a></li>
+            <li><a href="#" onclick="showPage('gallery')">Gallery</a></li>
+            <li><a href="#" onclick="showPage('blog')">Blog</a></li>
+            <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <!-- Home -->
+        <section id="home" class="page">
+            <div class="hero">
+                <h2>Selamat Datang di Portfolio Saya</h2>
+                <p>Saya Marshanda, mahasiswa Teknik Informatika Universitas Sam Ratulangi, Manado. Portfolio ini menampilkan proyek, galeri foto, artikel blog tentang teknologi, dan cara menghubungi saya.</p>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section id="gallery" class="page hidden">
+            <h2>Gallery Foto</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x200/007BFF/FFFFFF?text=Foto+1" alt="Foto 1">
+                    <p>Pemandangan Manado</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x200/28a745/FFFFFF?text=Foto+2" alt="Foto 2">
+                    <p>Kegiatan Kuliah</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x200/DC3545/FFFFFF?text=Foto+3" alt="Foto 3">
+                    <p>Proyek Pemrograman</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x200/FFC107/000000?text=Foto+4" alt="Foto 4">
+                    <p>Liburan Bunaken</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog -->
+        <section id="blog" class="page hidden">
+            <h2>Blog Teknologi</h2>
+            <article class="blog-post">
+                <h3>Tren AI Generatif di Tahun 2026</h3>
+                <p>Tahun 2026 menandai kematangan AI generatif yang meluas ke berbagai sektor seperti pembuatan konten, desain, dan pengembangan aplikasi. Teknologi ini diprediksi digunakan oleh lebih dari 100 juta orang secara global, berkontribusi hingga $4,4 triliun pada ekonomi [web:17][web:15][web:12].</p>
+            </article>
+            <article class="blog-post">
+                <h3>Perkembangan Teknologi 6G Menuju 2026</h3>
+                <p>6G menawarkan kecepatan 100 kali lipat dari 5G dengan latensi hampir nol, mendukung miliaran perangkat IoT. MediaTek telah mendemonstrasikan radio 6G pertama di MWC 2026, sementara Samsung memverifikasi teknologi inti X-MIMO [web:16][web:13][web:2].</p>
+            </article>
+            <article class="blog-post">
+                <h3>Tren Teknologi Lainnya di 2026</h3>
+                <p>Selain AI dan 6G, tren mencakup komputasi kuantum (+38% pertumbuhan), IoT & Smart City (+45%), serta keamanan siber berbasis AI (+71%). Di Indonesia, fokus pada transformasi digital, fintech, dan infrastruktur internet terjangkau [web:11][web:14].</p>
+            </article>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="page hidden">
+            <h2>Hubungi Saya</h2>
+            <p><strong>Nama:</strong> Marshanda</p>
+            <p><strong>NIM:</strong> 220211060018</p>
+            <p><strong>Email:</strong> marshandamumu026@student.unsrat.ac.id</p>
+            <p><strong>Alamat:</strong> Manado, Sulawesi Utara</p>
+            <p><strong>Telepon:</strong> 0815-4335-1188</p>
+            <form id="contactForm">
+                <input type="text" placeholder="Marshanda" required>
+                <input type="email" placeholder="marshandamumu026@student.unsrat.ac.id" required>
+                <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2026 Marshanda. Dibuat dengan HTML, CSS, JS murni.</p>
+    </footer>
+
+    <script>
+        function showPage(pageId) {
+            // Sembunyikan semua section
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(p => p.classList.add('hidden'));
+            // Tampilkan halaman yang dipilih
+            document.getElementById(pageId).classList.remove('hidden');
+            // Update nav active
+            const links = document.querySelectorAll('nav a');
+            links.forEach(l => l.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+
+        // Form submit handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Pesan telah dikirim! Terima kasih.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
