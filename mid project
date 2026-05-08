@@ -53,20 +53,20 @@
             <h2>Gallery Foto</h2>
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="https://via.placeholder.com/300x200/007BFF/FFFFFF?text=Foto+1" alt="Foto 1">
-                    <p>Pemandangan Manado</p>
+                    <img src="https://github.com/marshandamumu026/portfolio/raw/main/gambar 1.jpg">
+                    <p>Perkembangan Teknologi Informasi dan Komunikasi (TIK)o</p>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://via.placeholder.com/300x200/28a745/FFFFFF?text=Foto+2" alt="Foto 2">
-                    <p>Kegiatan Kuliah</p>
+                    <img src="https://github.com/marshandamumu026/portfolio/raw/main/gambar 2.jpg">
+                    <p>Optimalisasi Teknologi Dalam Kehidupan</p>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://via.placeholder.com/300x200/DC3545/FFFFFF?text=Foto+3" alt="Foto 3">
-                    <p>Proyek Pemrograman</p>
+                    <img src="https://github.com/marshandamumu026/portfolio/raw/main/gambar 3.jpg">
+                    <p>Teknologi Informasi</p>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://via.placeholder.com/300x200/FFC107/000000?text=Foto+4" alt="Foto 4">
-                    <p>Liburan Bunaken</p>
+                    <img src="https://github.com/marshandamumu026/portfolio/raw/main/gambar 4.jpg">
+                    <p>Kemajuan Teknologi</p>
                 </div>
             </div>
         </section>
